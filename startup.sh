@@ -97,7 +97,7 @@ echo "Python Version: $($PY --version)" >> "$LOG_FILE"
 # Check if the venv should be reinstalled
 if [[ "$REINSTALL" == "1" ]]; then
     echo "Reinstalling dependencies..."
-    rm -rf venv
+    rm -rf waifb
 fi
 # Python venv
 if [[ ! -d "venv" ]]; then
@@ -107,7 +107,7 @@ if [[ ! -d "venv" ]]; then
     export REINSTALL=1
 fi
 # Load the venv
-source ./venv/bin/activate
+source ./waifb/bin/activate
 
 # Run the script with --update-pip ./startup.sh to update pip
 if [[ "$UPDATE" == "1" || "$REINSTALL" == "1" ]]; then

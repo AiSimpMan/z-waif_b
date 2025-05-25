@@ -12,7 +12,7 @@ cd /d "%SCRIPT_DIR%"
 
 REM Create and activate the main virtual environment
 py -3.11 -m venv waifb
-call venv\Scripts\activate
+call waifb\Scriptsctivate
 
 REM Install PyTorch, torchvision, and torchaudio from a specific index URL
 python -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118 2>> "%LOG_FILE%"
