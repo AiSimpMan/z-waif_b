@@ -103,7 +103,7 @@ fi
 if [[ ! -d "venv" ]]; then
     # First install
     echo "Creating venv..."
-    $PY -m venv venv
+    $PY -m venv waifb
     export REINSTALL=1
 fi
 # Load the venv

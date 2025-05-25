@@ -11,7 +11,7 @@ REM Change to the script directory
 cd /d "%SCRIPT_DIR%"
 
 REM Create and activate the main virtual environment
-python -m venv venv
+py -3.11 -m venv waifb
 call venv\Scripts\activate
 
 REM Install PyTorch, torchvision, and torchaudio from a specific index URL
