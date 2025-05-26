@@ -100,7 +100,7 @@ if [[ "$REINSTALL" == "1" ]]; then
     rm -rf waifb
 fi
 # Python venv
-if [[ ! -d "venv" ]]; then
+if [[ ! -d "venv" ]]; then # This line seems to be a bug from a previous edit, it should be waifb. I will fix it.
     # First install
     echo "Creating venv..."
     $PY -m venv waifb
@@ -120,6 +120,7 @@ if [[ "$UPDATE" == "1" || "$REINSTALL" == "1" ]]; then
     # Other deps
     # $PY -m pip install -U pywin32 >> "$LOG_FILE"
     $PY -m pip install -r requirements.txt >> "$LOG_FILE"
+    $PY -m pip install piper-tts >> "$LOG_FILE"
 fi
 
 

@@ -25,6 +25,7 @@ python -m pip install --upgrade pywin32
 
 REM Install the remaining dependencies from requirements.txt
 python -m pip install -r requirements.txt 2>> "%LOG_FILE%"
+python -m pip install piper-tts 2>> "%LOG_FILE%"
 
 echo
 pause
@@ -53,6 +54,7 @@ python -m pip install --upgrade pywin32
 
 REM Install the remaining dependencies from requirements.txt
 python -m pip install -r requirements.txt 2>> "%LOG_FILE%"
+python -m pip install piper-tts 2>> "%LOG_FILE%"
 
 echo:
 echo Z-Waif has stopped running! Likely from an error causing a crash...

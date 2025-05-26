@@ -9,7 +9,8 @@ stream_chats = True
 newline_cut = False
 asterisk_ban = False
 supress_rp = False
-stopping_strings = ["[System", "\nUser:", "---", "<|", "###"]
+stopping_strings = ["[System", "
+User:", "---", "<|", "###"]
 
 semi_auto_chat = False
 hangout_mode = False
@@ -45,3 +46,7 @@ vtube_enabled = True
 discord_enabled = True
 rag_enabled = True
 vision_enabled = True
+
+# Piper TTS Settings
+PIPER_VOICE_MODEL = "en_US-lessac-medium"  # Default voice model
+PIPER_DATA_DIR = None  # Optional: Path to directory containing Piper voice models. If None, Piper might use default or require models in specific locations.
