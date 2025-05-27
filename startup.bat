@@ -11,8 +11,8 @@ REM Change to the script directory
 cd /d "%SCRIPT_DIR%"
 
 REM Create and activate the main virtual environment
-python -m venv venv
-call venv\Scripts\activate
+py -3.11 -m venv waifb
+call waifb\Scriptsctivate
 
 REM Execute the Python script
 python main.py 2>> "%LOG_FILE%"

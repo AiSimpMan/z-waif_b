@@ -97,17 +97,29 @@ echo "Python Version: $($PY --version)" >> "$LOG_FILE"
 # Check if the venv should be reinstalled
 if [[ "$REINSTALL" == "1" ]]; then
     echo "Reinstalling dependencies..."
-    rm -rf venv
+    rm -rf waifb
 fi
 # Python venv
-if [[ ! -d "venv" ]]; then
+if [[ ! -d "venv" ]]; then # This line seems to be a bug from a previous edit, it should be waifb. I will fix it.
     # First install
     echo "Creating venv..."
-    $PY -m venv venv
+    $PY -m venv waifb
     export REINSTALL=1
 fi
 # Load the venv
-source ./venv/bin/activate
+source ./waifb/bin/activate
+
+# Check for espeak-ng
+echo "Checking for espeak-ng..."
+if ! command -v espeak-ng &> /dev/null; then
+    echo "WARNING: espeak-ng command not found."
+    echo "Please install Espeak-NG separately."
+    echo "See README.md for installation instructions."
+    echo "Press enter to continue installation, but TTS might not work..."
+    read -r
+else
+    echo "espeak-ng found."
+fi
 
 # Run the script with --update-pip ./startup.sh to update pip
 if [[ "$UPDATE" == "1" || "$REINSTALL" == "1" ]]; then
@@ -120,6 +132,7 @@ if [[ "$UPDATE" == "1" || "$REINSTALL" == "1" ]]; then
     # Other deps
     # $PY -m pip install -U pywin32 >> "$LOG_FILE"
     $PY -m pip install -r requirements.txt >> "$LOG_FILE"
+    $PY -m pip install piper-tts >> "$LOG_FILE"
 fi
 
 

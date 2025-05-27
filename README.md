@@ -49,6 +49,35 @@ If you need help / assistance, please submit a GitHub issue, or feel free to ema
 
 Z-Waif has [a basic website](https://zwaif.neocities.org/) that you can visit. I have also set up [a small Discord](https://discord.gg/XDWsAyVasH) for community members to chat as well.
 
+## TTS Engine: Espeak-NG Setup
+
+This application uses Espeak-NG as its text-to-speech engine. Espeak-NG must be installed separately on your system as it is not a Python package installable via pip.
+
+**Installation Instructions:**
+
+*   **Windows:**
+    *   Download the latest `espeak-ng-*.zip` file from the [Espeak-NG GitHub releases page](https://github.com/espeak-ng/espeak-ng/releases).
+    *   Extract the archive.
+    *   It's recommended to add the directory containing `espeak-ng.exe` to your system's PATH environment variable. Alternatively, you might need to configure the path to `espeak-ng.exe` in the application settings if such an option is provided.
+
+*   **Linux (Debian/Ubuntu):**
+    ```bash
+    sudo apt-get update
+    sudo apt-get install espeak-ng
+    ```
+
+*   **Linux (Fedora):**
+    ```bash
+    sudo dnf install espeak-ng
+    ```
+
+*   **macOS (using Homebrew):**
+    ```bash
+    brew install espeak-ng
+    ```
+
+After installation, the startup script will attempt to verify if `espeak-ng` is accessible.
+
 ## Diaspora
 #### The Original:
 [TumblerWarren/Virtual_Avatar_ChatBot](https://github.com/TumblerWarren/Virtual_Avatar_ChatBot), this is the original project that this code is spun-off of. Full credit to that project - it provided the skeleton for the many advancements now in place. It has more of a focus on non-local AI, if that is what you need.
