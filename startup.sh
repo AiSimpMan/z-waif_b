@@ -109,6 +109,18 @@ fi
 # Load the venv
 source ./waifb/bin/activate
 
+# Check for espeak-ng
+echo "Checking for espeak-ng..."
+if ! command -v espeak-ng &> /dev/null; then
+    echo "WARNING: espeak-ng command not found."
+    echo "Please install Espeak-NG separately."
+    echo "See README.md for installation instructions."
+    echo "Press enter to continue installation, but TTS might not work..."
+    read -r
+else
+    echo "espeak-ng found."
+fi
+
 # Run the script with --update-pip ./startup.sh to update pip
 if [[ "$UPDATE" == "1" || "$REINSTALL" == "1" ]]; then
     echo "Updating..."

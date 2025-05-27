@@ -47,6 +47,46 @@ discord_enabled = True
 rag_enabled = True
 vision_enabled = True
 
-# Piper TTS Settings
-PIPER_VOICE_MODEL = "en_US-lessac-medium"  # Default voice model
-PIPER_DATA_DIR = None  # Optional: Path to directory containing Piper voice models. If None, Piper might use default or require models in specific locations.
+# Piper TTS Settings (These will be effectively replaced/ignored by the new structure if ACTIVE_TTS_ENGINE is not 'piper')
+PIPER_VOICE_MODEL = "en_US-lessac-medium"
+PIPER_DATA_DIR = None
+
+# TTS Engine Settings
+ACTIVE_TTS_ENGINE = "espeak"  # Can be "espeak", or other future engines
+
+TTS_ENGINE_CONFIG = {
+    "espeak": {
+        "default_voice_params": { 
+            "variant": "en-us+f3",  # Example: English US female voice variant 3
+            "pitch": 70,            # Pitch adjustment (0-99)
+            "speed": 160,           # Speed in words-per-minute (approx 80-450)
+            "word_gap": 0           # Pause between words in units of 10ms (e.g., 5 = 50ms)
+        },
+        "voice_profiles": {
+            # These are examples; actual use would depend on how the application
+            # decides which profile to use (e.g., for different characters).
+            "profile1_female": {"variant": "en-us+f4", "pitch": 75, "speed": 150, "word_gap": 0},
+            "profile2_male": {"variant": "en-us+m3", "pitch": 40, "speed": 160, "word_gap": 0},
+        }
+    },
+    # "coqui": { # Example for a future Coqui TTS integration
+    #     "model_name": "tts_models/en/ljspeech/tacotron2-DDC",
+    #     "speaker_wav": None, # Path to speaker wav for voice cloning
+    #     "language": "en"
+    # },
+    # "piper": { # Example for a future Piper TTS integration
+    #     "model": "en_US-lessac-medium", # Voice model name
+    #     "data_dir": None # Optional path to piper models directory
+    # }
+}
+
+# Specific Espeak-NG settings (can be overridden by profiles or direct call)
+# These are somewhat redundant if using default_voice_params from TTS_ENGINE_CONFIG,
+# but kept for now if direct access was planned. Best practice would be to solely
+# rely on the TTS_ENGINE_CONFIG structure for engine-specific params.
+# For now, the espeak_tts.py Engine will primarily use TTS_ENGINE_CONFIG.
+# These individual settings below might be deprecated or removed later.
+ESPEAK_VOICE_VARIANT = "en-us+f3" 
+ESPEAK_PITCH = 70            
+ESPEAK_SPEED = 160           
+ESPEAK_WORD_GAP = 0
