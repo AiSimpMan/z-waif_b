@@ -1,0 +1,21 @@
+
+[notice] A new release of pip is available: 24.0 -> 25.1.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+  Running command git clone --filter=blob:none --quiet https://github.com/openai/whisper.git 'C:\Users\Dick Asterblaster\AppData\Local\Temp\pip-req-build-lpwvqs15'
+
+[notice] A new release of pip is available: 24.0 -> 25.1.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+ERROR: Ignored the following versions that require a different python version: 0.52.0 Requires-Python >=3.6,<3.9; 0.52.0rc3 Requires-Python >=3.6,<3.9; 0.53.0 Requires-Python >=3.6,<3.10; 0.53.0rc1.post1 Requires-Python >=3.6,<3.10; 0.53.0rc2 Requires-Python >=3.6,<3.10; 0.53.0rc3 Requires-Python >=3.6,<3.10; 0.53.1 Requires-Python >=3.6,<3.10; 0.54.0 Requires-Python >=3.7,<3.10; 0.54.0rc2 Requires-Python >=3.7,<3.10; 0.54.0rc3 Requires-Python >=3.7,<3.10; 0.54.1 Requires-Python >=3.7,<3.10; 0.55.0 Requires-Python >=3.7,<3.11; 0.55.0rc1 Requires-Python >=3.7,<3.11; 0.55.1 Requires-Python >=3.7,<3.11; 0.55.2 Requires-Python >=3.7,<3.11; 1.21.2 Requires-Python >=3.7,<3.11; 1.21.3 Requires-Python >=3.7,<3.11; 1.21.4 Requires-Python >=3.7,<3.11; 1.21.5 Requires-Python >=3.7,<3.11; 1.21.6 Requires-Python >=3.7,<3.11
+ERROR: Could not find a version that satisfies the requirement silero-vad==0.0.2 (from versions: 5.0.1b2, 5.0.1b3, 5.1, 5.1.2)
+ERROR: No matching distribution found for silero-vad==0.0.2
+
+[notice] A new release of pip is available: 24.0 -> 25.1.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+Traceback (most recent call last):
+  File "C:\Eira-waifu\z-waif_b\main.py", line 5, in <module>
+    import humanize, os, threading
+ModuleNotFoundError: No module named 'humanize'
+  Running command git clone --filter=blob:none --quiet https://github.com/openai/whisper.git 'C:\Users\Dick Asterblaster\AppData\Local\Temp\pip-req-build-2b173_gw'
+ERROR: Ignored the following versions that require a different python version: 0.52.0 Requires-Python >=3.6,<3.9; 0.52.0rc3 Requires-Python >=3.6,<3.9; 0.53.0 Requires-Python >=3.6,<3.10; 0.53.0rc1.post1 Requires-Python >=3.6,<3.10; 0.53.0rc2 Requires-Python >=3.6,<3.10; 0.53.0rc3 Requires-Python >=3.6,<3.10; 0.53.1 Requires-Python >=3.6,<3.10; 0.54.0 Requires-Python >=3.7,<3.10; 0.54.0rc2 Requires-Python >=3.7,<3.10; 0.54.0rc3 Requires-Python >=3.7,<3.10; 0.54.1 Requires-Python >=3.7,<3.10; 0.55.0 Requires-Python >=3.7,<3.11; 0.55.0rc1 Requires-Python >=3.7,<3.11; 0.55.1 Requires-Python >=3.7,<3.11; 0.55.2 Requires-Python >=3.7,<3.11; 1.21.2 Requires-Python >=3.7,<3.11; 1.21.3 Requires-Python >=3.7,<3.11; 1.21.4 Requires-Python >=3.7,<3.11; 1.21.5 Requires-Python >=3.7,<3.11; 1.21.6 Requires-Python >=3.7,<3.11
+ERROR: Could not find a version that satisfies the requirement silero-vad==0.0.2 (from versions: 5.0.1b2, 5.0.1b3, 5.1, 5.1.2)
+ERROR: No matching distribution found for silero-vad==0.0.2
