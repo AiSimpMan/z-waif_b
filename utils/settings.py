@@ -9,8 +9,7 @@ stream_chats = True
 newline_cut = False
 asterisk_ban = False
 supress_rp = False
-stopping_strings = ["[System", "
-User:", "---", "<|", "###"]
+stopping_strings = ["[System", "\nUser:", "---", "<|", "###"]
 
 semi_auto_chat = False
 hangout_mode = False

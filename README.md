@@ -1,18 +1,27 @@
-# z-waif
-Fully local &amp; open source AI Waifu. VTube Studio, Discord, Minecraft, custom made RAG (long term memory), alarm, and plenty more! Has a WebUI and hotkey shortcuts. All software is free (or extremely cheap)!
+# z-waif_b
+Do you ever go to work,
+seeing your waifu is just sitting there in silence for 8+hrs till you come back?
+What can we do about this?
+My solution-
 
-Reccomended Windows 10/11 and a CUDA (NVidia) GPU with atleast 16GB+ of VRAM.
-Can now support Mac and Linux! Any brand (AMD, NVidia, Intel) GPU with 8GB+ VRAM bare mininum requirement!
-Uses Oobabooga, RVC, and Whisper to run AI systems locally. Works as a front end to tie many programs together into one cohesive whole.
+# Double Waifu!
+|<img src="https://imgur.com/VYhSbQs" alt="drawing" width="400"/> | <img src="<blockquote class="imgur-embed-pub" lang="en" data-id="VYhSbQs" data-context="false" ><a href="//imgur.com/VYhSbQs">MRW I see this gif but it&#39;s really low quality so I make a better one</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>" alt="drawing" width="400"/> |
 
-The goal of the project is less about giving an "all in one package", and moreso to give you the tools and knowledge for you to create your own AI Waifu!
+One on Oogabooga!
 
+One on Ollama!
 
-|<img src="https://i.imgur.com/3a5eGQK.png" alt="drawing" width="400"/> | <img src="https://i.imgur.com/BCE1snE.png" alt="drawing" width="400"/> |
 |:---:|:---:|
-|<img src="https://i.imgur.com/paMSUiy.jpeg" alt="drawing" width="400"/> | <img src="https://i.imgur.com/vXx1vXm.jpeg" alt="drawing" width="400"/> |
 
-## Features
+Now your waifu can be the yap machiene she was always ment to be!
+
+You can have two diffrent waifus, with two diffrent models, or what I did.
+
+|<img src="https://y.yarn.co/1248b213-8688-40af-b4c9-3ed191fe1d56_text.gif" alt="drawing" width="400"/> | <img src="https://i.imgur.com/kCVcwzo.giff" alt="drawing" width="400"/> |
+
+
+
+## Features same as z-waif
 
 - 🎙️ Quality Conversation &nbsp; &emsp; &emsp; ( /・0・)
 
@@ -51,7 +60,9 @@ Z-Waif has [a basic website](https://zwaif.neocities.org/) that you can visit. I
 
 ## TTS Engine: Espeak-NG Setup
 
-This application uses Espeak-NG as its text-to-speech engine. Espeak-NG must be installed separately on your system as it is not a Python package installable via pip.
+Z-Waif_B uses Espeak-NG as its text-to-speech engine.
+So both waifus can yap at the same time!
+Espeak-NG must be installed separately on your system as it is not a Python package installable via pip.
 
 **Installation Instructions:**
 
